@@ -1,3 +1,5 @@
+delete from customer_profile;
+delete from customer;
 insert into customer(id, name) values (1, 'Hillary Hajji');
 insert into customer(id, name) values (2, 'Walter Charles');
 

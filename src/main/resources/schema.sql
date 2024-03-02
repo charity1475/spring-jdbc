@@ -4,7 +4,7 @@ create table if not exists customer
   name text
 );
 
-create table if not exists customer_orders
+create table if not exists customer_order
 (
   id serial primary key,
   customer bigint not null references customer(id),
@@ -20,6 +20,6 @@ create table if not exists customer_profile
 );
 
 delete from customer_profile;
-delete from customer_orders;
+delete from customer_order;
 delete from customer;
 
